@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js" defer></script>
+    <title>SNEAKERS | Limited Edition</title>
+</head>
+
+<body>
+
+    <!--Header and nav-->
+    <header>
+        <div>
+            <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+            <h1>sneakers</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><i id="close-icon" class="fa-solid fa-xmark"></i></li>
+                <li><a href="#">collections</a></li>
+                <li><a href="#">men</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div id="cart-user-icons">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+            <span>0</span>
+        </div>
+
+        <!--Cart-->
+        <div id="cart">
+            <div>Cart</div>
+        <!--Empty cart-->
+            <div id="empty-cart">Your cart is empty</div>
+        <!--Cart with items-->
+            <div id="cart-with-item">
+                <div>
+                    <img src="/images/sneakers-product-image-1.webp" alt="White and light brown sneakers">
+                </div>
+                <div>
+                    <p>fall limited edition sneakers</p>
+                    <div>
+                        <span>125</span><span>x</span><span id="items"></span>
+                        <span id="dollar-sign">$</span><span id="total"></span>
+                    </div>
+                </div>
+                <i id="trash-icon" class="fa-solid fa-trash"></i>
+                <button type="button">checkout</button>
+            </div>
+        </div>
+    </header>
+    <!--Main, images, product info and add to cart-->
+    <main>
+        <div>
+            <!--Show choosed image on larger screens-->
+            <div id="show-img-larger">
+                <img src="images/sneakers-product-image-1.webp" alt="White and light brown sneakers">
+            </div>
+            <div id="images-wrapper">
+                <div id="images-container">
+                    <img src="images/sneakers-product-image-1.webp" alt="White and light brown sneakers">
+                    <img src="images/sneakers-product-image-2.webp" alt="White and light brown sneakers">
+                    <img src="images/sneakers-product-image-3.webp" alt="White and light brown sneakers">
+                    <img src="images/sneakers-product-image-4.webp" alt="White and light brown sneakers">
+                </div>
+                <!--Arrows for smaller screens - slide images when clicked-->
+                <div id="arrows-slider">
+                    <span id="slide-left">&lt;</span><span id="slide-right">&gt;</span>
+                </div>
+                <div id="show-current-img">
+                    Image:<span id="current-img">1</span>/<span>4</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="product-info-add-to-cart">
+            <h2>sneakers company</h2>
+            <p>Fall Limited Edition Sneakers</p>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+                they’ll withstand everything the weather can offer.</p>
+            <div>
+                <div><span>$125</span><span>50%</span></div> <span>$250</span>
+            </div>
+            <div id="btns">
+                <button><span id="decrement">-</span><span id="value">0</span><span id="increment">+</span></button>
+                <button id="add-to-cart">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span>Add to cart</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
