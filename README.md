@@ -57,6 +57,7 @@ Problemet berodde på att bilderna krympte i containern. Det löstes genom att a
                     Image:<span id="current-img">1</span>/<span>4</span>
                 </div>
             </div>
+```
 
 ```css
 #images-container {
@@ -69,8 +70,10 @@ Problemet berodde på att bilderna krympte i containern. Det löstes genom att a
     width: 100%;
     flex-shrink: 0;
 }
+```
 
 ## 🟡 Klona repo
 
 ```bash
 git clone https://github.com/izab2500/lab5_2js.git
+
