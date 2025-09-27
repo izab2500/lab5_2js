@@ -33,8 +33,6 @@ function toggleNavMobile(evt) {
 
     if (target !== "hamburger-icon" && target !== "close-icon") return
 
-    //target === "hamburger-icon" ? navEl.classList.add("show-nav-mobile") : navEl.classList.remove("show-nav-mobile");
-
     if (target === "hamburger-icon") {
         navEl.classList.add("show-nav-mobile");
 
