@@ -18,6 +18,7 @@ const imgChoosedLarge = document.querySelector("#show-img-larger > img");
 const allImages = document.querySelectorAll("#images-container img");
 const btnsParent = document.querySelector("#btns");
 const valueBtn = document.querySelector("#value");
+const overlay = document.querySelector("#overlay")
 
 // Add class to style first and choosed image on screen 600px and up
 if (window.screen.width >= 600) {
@@ -32,11 +33,36 @@ function toggleNavMobile(evt) {
 
     if (target !== "hamburger-icon" && target !== "close-icon") return
 
-    target === "hamburger-icon" ? navEl.classList.add("show-nav-mobile") : navEl.classList.remove("show-nav-mobile");
+    //target === "hamburger-icon" ? navEl.classList.add("show-nav-mobile") : navEl.classList.remove("show-nav-mobile");
+
+    if (target === "hamburger-icon") {
+        navEl.classList.add("show-nav-mobile");
+
+        overlay.classList.add("overlay");
+
+        disableScroll();
+        return
+    }
+    navEl.classList.remove("show-nav-mobile");
+
+    overlay.classList.remove("overlay");
+
+    enableScroll();
 
 }
 
 headerEl.addEventListener("click", toggleNavMobile);
+
+// Function disables scroll
+function disableScroll() {
+    document.body.style.overflow = "hidden"
+}
+
+// Function enables scroll
+function enableScroll() {
+    document.body.style.overflow = ""
+
+}
 
 /***** ******/
 
